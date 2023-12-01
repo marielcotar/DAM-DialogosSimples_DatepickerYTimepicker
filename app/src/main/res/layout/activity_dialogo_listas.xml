@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DialogoListas">
+
+    <Button
+        android:id="@+id/btnMostrarDialogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Mostrar Diálogo"
+        app:layout_constraintEnd_toEndOf="@+id/checkbox5"
+        app:layout_constraintStart_toStartOf="@+id/checkbox5"
+        app:layout_constraintTop_toBottomOf="@+id/checkbox5" />
+
+    <TextView
+        android:id="@+id/tvOpcionesSeleccionadas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Opciones seleccionadas: "
+        app:layout_constraintEnd_toEndOf="@+id/btnMostrarDialogo"
+        app:layout_constraintStart_toStartOf="@+id/btnMostrarDialogo"
+        app:layout_constraintTop_toBottomOf="@+id/btnMostrarDialogo" />
+
+    <CheckBox
+        android:id="@+id/checkbox1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Opción 1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        android:id="@+id/checkbox2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Opción 2"
+        app:layout_constraintEnd_toEndOf="@+id/checkbox1"
+        app:layout_constraintStart_toStartOf="@+id/checkbox1"
+        app:layout_constraintTop_toBottomOf="@+id/checkbox1" />
+
+    <CheckBox
+        android:id="@+id/checkbox3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Opción 3"
+        app:layout_constraintEnd_toEndOf="@+id/checkbox2"
+        app:layout_constraintStart_toStartOf="@+id/checkbox2"
+        app:layout_constraintTop_toBottomOf="@+id/checkbox2" />
+
+    <CheckBox
+        android:id="@+id/checkbox4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Opción 4"
+        app:layout_constraintEnd_toEndOf="@+id/checkbox3"
+        app:layout_constraintStart_toStartOf="@+id/checkbox3"
+        app:layout_constraintTop_toBottomOf="@+id/checkbox3" />
+
+    <CheckBox
+        android:id="@+id/checkbox5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Opción 5"
+        app:layout_constraintEnd_toEndOf="@+id/checkbox4"
+        app:layout_constraintStart_toStartOf="@+id/checkbox4"
+        app:layout_constraintTop_toBottomOf="@+id/checkbox4" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
